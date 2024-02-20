@@ -52,9 +52,10 @@ export default function Home({ posts }) {
            Notionと連携しているブログです。Notionに書き込めばそのままブログとして投稿できます。
           </p>
         </header>
-
+        
         <h2 className={styles.heading}>All Posts</h2>
         <ol className={styles.posts}>
+          
           {posts.map((post) => {
             const date = new Date(post.last_edited_time).toLocaleString(
               "en-US",
